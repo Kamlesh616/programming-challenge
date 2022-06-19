@@ -3,10 +3,11 @@
 import cv2
 import numpy as np
 
+# image read
+img =cv2.imread('Downloads/pbl.jpg')   
 
-img =cv2.imread('Downloads/pbl.jpg')   #image read
-
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) # image convert it to grayscale
+# image convert it to grayscale
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
 
 # Find the maximum and minimum value 
 cv2.minMaxLoc(gray)
